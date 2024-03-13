@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Charts Deephouse</title>
+    <link rel="stylesheet" href="cursos.css" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="cursos.html">Cursos</a></li>
+                <li><a href="calificaciones.html">Calificaciones</a></li>
+                <li><a href="charts.html">Charts</a></li>
+                <li><a href="#SobreNosotros">Sobre nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="logo">
+        <img src="img/AmericanAudio.gif" />            
+        <h2>Chart Deephouse</h2>
+    </div>
+
+    <!-- vamos consumir la api -->
+    <h1>SoundCloud</h1>
+    <div id="chartData"></div>
+
+    <footer>
+        <div class="footer-container">
+          <div class="footer-logo">
+            <img src="img/logo_footer.png" alt="Logotipo">
+          </div>
+          <div class="footer-links">
+            <ul>
+              <li><a href="#">Política de privacidad</a></li>
+              <li><a href="#">Aviso de derechos de autor</a></li>
+              <li><a href="#">Mapa del sitio</a></li>
+              <li><a href="#">Contacto</a></li>
+            </ul>
+          </div>
+          <div class="footer-social">
+            <ul>
+              <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+              <li><a href="#"><i class="bi bi-twitter-x"></i></a></li>
+              <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+              <!-- Agrega iconos de redes sociales -->
+            </ul>
+          </div>
+        </div>
+        <div class="footer-subscribe">
+          <h3 class="h3_footer">Suscríbete a nuestro boletín de noticias</h3>
+          <form action="#" method="post">
+            <input type="email" name="email" placeholder="Tu correo electrónico" required>
+            <button type="submit">Suscribirse</button>
+          </form>
+        </div>
+      </footer>
+    
+    <script src="charts.js"></script>
+</body>
+</html>

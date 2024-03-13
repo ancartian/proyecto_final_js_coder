@@ -1,0 +1,432 @@
+/* Globales */
+*::after,
+*::before,
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+h2 {
+    color:brown;
+}
+
+h3 {
+    color:darkslateblue;
+}
+
+li {
+    font-weight: bolder;
+    color: blue;
+}
+
+button {
+    height: 30px;
+    width: 150px;
+    background-color: darkblue;
+    color: white;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.logo {
+    text-align: center;
+}
+
+.logo img {
+    height: 180px;
+    width: 180px;
+}
+
+.info span {
+    font-weight: bolder;
+    font-size: large;
+    color: blue;
+}
+
+
+header {
+    background-color: #ffad9f; /* Color de barra de navegación */
+    padding: 5px 0;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    display: flex;
+    justify-content: space-around; /* Alineación horizontal en pantallas grandes */
+    flex-direction: row; /* Alinear horizontalmente los elementos en pantallas grandes */
+}
+
+nav a {
+    text-decoration: none;
+    color: #555;
+    padding: 5px;
+    display: inline-block;
+    transition: color 0.3s ease; /* Transición de color */
+}
+
+nav a:hover {
+    color: #ff745b; /* Cambio de color al pasar el ratón */
+}
+
+
+#miDiv {
+    width: 200px;
+    height: 100px;
+    background-color: #f0f0f0;
+    margin: 20px;
+}
+
+
+/* Estilos para el botón eliminar producto */
+.btn-eliminar-producto {
+    border: none;
+    border-radius: 5px; /* Redondear los bordes */
+    background-color: red; 
+    color: white; 
+    padding: 8px 16px; 
+    cursor: pointer; /* Cambiar el cursor */
+    transition: transform 0.2s; /* Agregar una transición al efecto hover */
+}
+
+/* Estilos hover*/
+.btn-eliminar-producto:hover {
+    transform: scale(1.1); /* Hacer un poco de zoom al pasar el mouse */
+}
+
+
+
+/* Estilos para el botón eliminar producto */
+.info-product button{
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(151, 72, 224);
+    color: white; 
+    padding: 8px 16px;
+    cursor: pointer; 
+    transition: transform 0.2s; /* Agregar una transición al efecto hover */
+}
+
+/* Estilos hover para el botón eliminar producto */
+.info-product button {
+    transform: scale(1.1); /* Hacer un poco de zoom al pasar el mouse */
+}
+
+  
+
+
+.carousel-container {
+    width: 80%;
+    height: auto;
+    margin: 50px auto;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  .carousel-slide {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+    
+  }
+  
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .arrow-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+    outline: none;
+  }
+  
+  #slide-prev {
+    left: 100px;
+    z-index: 2; 
+    margin-top: 350px;
+  }
+  
+  #slide-next {
+    right: 100px;
+    z-index: 2; 
+    margin-top: 350px;
+  }
+
+.icon-cart{
+    width: 40px;
+    height: 40px;
+    stroke: #000;
+}
+
+.icon-cart:hover{
+    cursor: pointer;
+}
+
+img{
+    max-width: 100%;
+}
+
+/* Header */
+
+.container-icon{
+    position: absolute;
+    right: 0; /* Coloca el elemento en el margen derecho */
+    top: 20%; 
+    transform: translateY(-50%); 
+    padding: 10px;
+    margin-right: 20px;
+}
+
+.count-products{
+    position: absolute;
+    top: 55%;
+    right: 0;
+
+    background-color: #000;
+    color: #fff;
+    width: 25px;
+    height: 25px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+#contador-productos{
+    font-size: 12px;
+}
+
+.container-cart-products{
+    position: absolute;
+    top: 50px;
+    right: 0;
+
+    background-color: #fff;
+    width: 400px;
+    z-index: 1;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+    border-radius: 10px;
+    
+}
+
+.cart-product{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+
+    border-bottom: 1px solid rgba(0, 0, 0, 0.20);
+
+}
+
+.info-cart-product{
+    display: flex;
+    justify-content: space-between;
+    flex: 0.8;
+}
+
+.titulo-producto-carrito{
+    font-size: 20px;
+}
+
+.precio-producto-carrito{
+    font-weight: 700;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.cantidad-producto-carrito{
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.icon-close{
+    width: 25px;
+    height: 25px;
+}
+
+.icon-close:hover{
+    stroke: red;
+    cursor: pointer;
+}
+
+.cart-total{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    gap: 20px;
+}
+
+.cart-total h3{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.total-pagar{
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.hidden-cart{
+    display: none;
+}
+
+
+
+
+/* Main */
+.container-items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.item{
+    border-radius: 10px;
+}
+
+.item:hover{
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+}
+
+.item img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    transition: all .5s;
+}
+
+.item figure{
+    overflow: hidden;
+}
+
+.item:hover img{
+    transform: scale(1.2);
+}
+
+.info-product{
+    padding: 15px 30px;
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.price{
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.info-product button{
+    border: none;
+    background: none;
+    background-color: #000;
+    color: #fff;
+    padding: 15px 10px;
+    cursor: pointer;
+}
+
+
+footer {
+    background-color: #ffad9f; /* Color de fondo footer */
+    color: #fff; 
+    padding: 20px 0; 
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+  
+  form{
+    margin-left: 20px;
+  }
+.formulario{
+    margin: 40px;
+    height: 115px;
+}
+
+  .h3_footer{
+    margin-left: 20px;
+  }
+
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer-logo img {
+    height: 50px; /* Tamaño del logotipo */
+  }
+  
+  .footer-links ul,
+  .footer-social ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-links ul li,
+  .footer-social ul li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  .footer-links ul li a,
+  .footer-social ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .footer-subscribe form {
+    display: flex;
+    align-items: center;
+  }
+  
+  .footer-subscribe input[type="email"] {
+    width: 250px;
+    padding: 10px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .footer-subscribe button {
+    background-color: darkblue; /* Color de fondo del botón */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .footer-subscribe button:hover {
+    background-color: #000; /* Color de fondo del botón al pasar el ratón */
+  }
+  

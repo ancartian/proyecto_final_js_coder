@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+h2 {
+    color:brown;
+}
+
+h3 {
+    color:darkslateblue;
+}
+
+li {
+    font-weight: bolder;
+    color: blue;
+}
+
+button {
+    height: 30px;
+    width: 150px;
+    background-color: darkblue;
+    color: white;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.logo {
+    text-align: center;
+}
+
+.logo img {
+    height: 180px;
+    width: 180px;
+}
+
+.info span {
+    font-weight: bolder;
+    font-size: large;
+    color: blue;
+}
+
+
+header {
+    background-color: #ffad9f; /* Color de barra de navegación */
+    padding: 5px 0;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    display: flex;
+    justify-content: space-around; /* Alineación horizontal */
+    flex-direction: row; /* Alinear horizontalmente*/
+}
+
+nav a {
+    text-decoration: none;
+    color: #555;
+    padding: 5px;
+    display: inline-block;
+    transition: color 0.3s ease; /* Transición de color */
+}
+
+nav a:hover {
+    color: #ff745b; /* Cambio de color al pasar el ratón */
+}
+
+
+#miDiv {
+    width: 200px;
+    height: 100px;
+    background-color: #f0f0f0;
+    margin: 20px;
+}
+
+
+/* Estilos para el botón eliminar producto */
+.btn-eliminar-producto {
+    border: none;
+    border-radius: 5px; /* Redondear los bordes */
+    background-color: red;
+    color: white; 
+    padding: 8px 16px; /* Ajustar el espacio*/
+    cursor: pointer; /* Cambiar el cursor al pasar sobre el boton */
+    transition: transform 0.2s; 
+}
+
+/* Estilos hover para el botón eliminar producto */
+.btn-eliminar-producto:hover {
+    transform: scale(1.1); /* Hacer un poco de zoom al pasar el mouse */
+}
+
+
+
+/* Estilos para el botón eliminar producto */
+.info-product button{
+    border: none;
+    border-radius: 5px; 
+    background-color: rgb(151, 72, 224); 
+    color: white; 
+    padding: 8px 16px; 
+    cursor: pointer; 
+    transition: transform 0.2s;
+}
+
+/* Estilos hover para el botón eliminar producto */
+.info-product button {
+    transform: scale(1.1); 
+}
+
+  
+
+
+.carousel-container {
+    width: 80%;
+    height: auto;
+    margin: 50px auto;
+    overflow: hidden;
+    cursor: pointer; /* Cambia el cursor a una mano */
+  }
+  
+  .carousel-slide {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+    
+  }
+  
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .arrow-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+    outline: none;
+  }
+  
+  #slide-prev {
+    left: 100px;
+    z-index: 2; 
+    margin-top: 350px;
+  }
+  
+  #slide-next {
+    right: 100px;
+    z-index: 2; 
+    margin-top: 350px;
+  }
+
+  footer {
+    background-color: #ffad9f; /* Color de fondo del footer */
+    color: #fff; 
+    padding: 20px 0; 
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer-logo img {
+    height: 50px; /* Tamaño del logo */
+  }
+  
+  .footer-links ul,
+  .footer-social ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-links ul li,
+  .footer-social ul li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  .footer-links ul li a,
+  .footer-social ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .footer-subscribe form {
+    display: flex;
+    align-items: center;
+  }
+  
+  .footer-subscribe input[type="email"] {
+    width: 250px;
+    padding: 10px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .footer-subscribe button {
+    background-color: darkblue; /* Color de fondo del botón */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .footer-subscribe button:hover {
+    background-color: #000; /* Color de fondo del boton al pasar click */
+  }
+  
+
+
+  /* dandole formato al chart */
+
+  .track {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: 10px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.track img {
+    width: 100px;
+}
+.track .info {
+    display: flex;
+    flex-direction: column;
+}

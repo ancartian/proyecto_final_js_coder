@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Calificaciones</title>
+    <link rel="stylesheet" href="cursos.css" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body onload="listarNotas()">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="cursos.html">Cursos</a></li>
+                <li><a href="calificaciones.html">Calificaciones</a></li>
+                <li><a href="charts.html">Charts</a></li>
+                <li><a href="#SobreNosotros">Sobre nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="logo">
+        <img src="img/AmericanAudio.gif" />            
+        <h2>Bienvenido a tu escuela de producción</h2>
+    </div>
+
+    <div id="login-form" class="formulario">
+        <h2>Iniciar sesión</h2>
+        <form id="form">
+            <label for="username">Usuario:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="button" onclick="validarCredenciales()">Iniciar sesión</button>
+        </form>
+    </div>
+
+    <div id="miDiv">
+        <div class="estudiante">            
+            <h3>Alumno: Esteban Carrizo</h3>
+        </div>
+
+        <h4>Notas:</h4>
+        <ul id="listaNotas">
+        </ul>
+
+        <div class="info">
+            <h4>Promedio: <span id="promedio"></span></h4>
+            <button onclick="calcularPromedio()">Calcular promedio</button>
+
+            <h4>Nota más alta: <span id="nota"></span></h4>
+            <button onclick="notaMasAlta()">Buscar nota más alta</button>
+
+            <h4>¿Hubo algún aplazo? <span id="aplazo"></span></h4>
+            <button onclick="hayAplazo()">Consultar aplazo</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+          <div class="footer-logo">
+            <img src="img/logo_footer.png" alt="Logotipo">
+          </div>
+          <div class="footer-links">
+            <ul>
+              <li><a href="#">Política de privacidad</a></li>
+              <li><a href="#">Aviso de derechos de autor</a></li>
+              <li><a href="#">Mapa del sitio</a></li>
+              <li><a href="#">Contacto</a></li>
+            </ul>
+          </div>
+          <div class="footer-social">
+            <ul>
+              <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+              <li><a href="#"><i class="bi bi-twitter-x"></i></a></li>
+              <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+             <!-- Agrega iconos de redes sociales -->
+            </ul>
+          </div>
+        </div>
+        <div class="footer-subscribe">
+          <h3 class="h3_footer">Suscríbete a nuestro boletín de noticias</h3>
+          <form action="#" method="post">
+            <input type="email" name="email" placeholder="Tu correo electrónico" required>
+            <button type="submit">Suscribirse</button>
+          </form>
+        </div>
+      </footer>
+    
+    <script src="js.js"></script>
+</body>
+</html>
